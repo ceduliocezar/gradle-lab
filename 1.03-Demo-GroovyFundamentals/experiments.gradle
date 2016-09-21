@@ -1,0 +1,4 @@
+task experiment << {}
+
+def foo = "bar"
+println "$foo + foo = ${foo + "foo"}"
