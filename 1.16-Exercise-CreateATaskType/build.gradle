@@ -15,3 +15,17 @@ Exercises:
 4. Run the "hello" task and observe the output.
 
 */
+
+class HelloTask extends DefaultTask{
+
+  String actionName
+
+  @TaskAction
+  public void doAction(){
+    println "doAction $actionName"
+  }
+}
+
+task hello(type: HelloTask){
+  actionName "Fight"
+}
