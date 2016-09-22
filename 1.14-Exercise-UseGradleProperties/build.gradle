@@ -1,4 +1,4 @@
-/* 
+/*
 
 In this series of exercises you'll be practicing different ways to pass
 properties into your Gradle build. We've again provided a set of sources files
@@ -21,7 +21,7 @@ in the webOutputDir property via the command line).
 */
 
 task bundleWeb(type: Zip) {
-    baseName = 'web'
+    baseName = fileName
     destinationDir = file(webOutputDir)
 
     from 'src/web'
